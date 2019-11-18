@@ -1,0 +1,21 @@
+protected void AsignarT()       
+        {
+            ClsFunciones ObjGuardar = new ClsFunciones();
+            ObjGuardar.id = TxtDocumento.Text;
+            ObjGuardar.nombres = TxtCliente.Text;
+            ObjGuardar.apellidos = "xxxx";
+            ObjGuardar.telefono= "xxxx";
+            ObjGuardar.correo = "xxxx";
+            ObjGuardar.placa = TxtPlaca.Text;
+            ObjGuardar.tipovehiculo = CbxTipoVehiculo.SelectedIndex+"";
+            ObjGuardar.tarifa = CbxTipoVehiculo.SelectedIndex;
+            ObjGuardar.lugar = TxtAsignacion.Text;
+            ObjGuardar.tiempo = TxtTiempo.Text;
+            ObjGuardar.n = Lbl.Text;
+            ObjGuardar.fecha = fecha;
+            ObjGuardar.hora = hora;
+            ObjGuardar.iva = "0";
+            ObjGuardar.total = "0";
+            ObjGuardar.Asignar();
+            
+        }
